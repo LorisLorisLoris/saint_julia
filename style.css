@@ -1,0 +1,72 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@200;500&family=Outfit:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+
+.logo{
+  font-family: 'Barlow Condensed', sans-serif;
+  font-weight: 600;
+}
+
+
+.bg-pastel{
+    background-color: beige;
+}
+
+.bg-pink{
+    background-color: #fcedf9;
+}
+
+.bg-beige{
+    background-color: #F3E5BD;
+}
+
+.purple{
+    color: #a36797;
+}
+
+h1, h3, h5, h6, p, input, button, li, a, .langue{
+    font-family: 'Outfit', sans-serif;
+}
+
+h1{
+    font-size: 3em;
+    font-weight: 600;
+    }
+
+h3{
+    font-size: 1.5em;
+}
+
+a{
+    cursor: pointer;
+}
+
+.h3underline{
+    font-weight: 600;
+    text-decoration: underline;
+    text-underline-offset: 10px;
+    text-decoration-thickness: 5px;
+    text-decoration-color: #F3E5BD;
+}
+
+.bg-cloud{
+background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' version='1.1' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns:svgjs='http://svgjs.com/svgjs' width='1440' height='300' preserveAspectRatio='none' viewBox='0 0 1440 300'%3e%3cg mask='url(%26quot%3b%23SvgjsMask1008%26quot%3b)' fill='none'%3e%3crect width='1440' height='300' x='0' y='0' fill='rgba(255%2c 255%2c 255%2c 1)'%3e%3c/rect%3e%3cpath d='M1488 300L0 300 L0 168.3Q61.54 109.84%2c 120 171.39Q164.34 143.73%2c 192 188.07Q237.03 161.09%2c 264 206.12Q309.92 132.04%2c 384 177.96Q427.23 149.19%2c 456 192.42Q521.14 137.56%2c 576 202.7Q623.55 130.25%2c 696 177.8Q738.31 148.12%2c 768 190.43Q812.52 162.95%2c 840 207.47Q855.8 151.27%2c 912 167.07Q979.18 114.25%2c 1032 181.42Q1079.35 156.77%2c 1104 204.12Q1158.11 138.23%2c 1224 192.33Q1270.59 118.92%2c 1344 165.51Q1388.29 137.8%2c 1416 182.09Q1457.59 151.68%2c 1488 193.26z' fill='rgba(244%2c 244%2c 244%2c 1)'%3e%3c/path%3e%3cpath d='M1512 300L0 300 L0 210.04Q56.21 146.25%2c 120 202.45Q173.17 183.62%2c 192 236.79Q240.71 165.5%2c 312 214.21Q342.94 173.16%2c 384 204.1Q454.18 154.28%2c 504 224.46Q550.18 198.65%2c 576 244.83Q616.89 165.72%2c 696 206.61Q739.59 178.2%2c 768 221.79Q814.56 196.35%2c 840 242.91Q881.06 163.97%2c 960 205.03Q1007.85 180.88%2c 1032 228.73Q1076.62 201.35%2c 1104 245.97Q1116.47 186.44%2c 1176 198.91Q1221.38 172.28%2c 1248 217.66Q1291.86 189.51%2c 1320 233.37Q1367.08 160.45%2c 1440 207.53Q1482.27 177.8%2c 1512 220.06z' fill='rgba(255%2c 225%2c 251%2c 1)'%3e%3c/path%3e%3cpath d='M1512 300L0 300 L0 258.42Q62.93 201.35%2c 120 264.27Q147.38 219.65%2c 192 247.03Q222.91 205.94%2c 264 236.84Q315.98 216.81%2c 336 268.79Q364.82 225.61%2c 408 254.43Q437.03 211.46%2c 480 240.49Q528.4 216.89%2c 552 265.29Q580.69 221.98%2c 624 250.66Q653.21 207.87%2c 696 237.07Q774.3 195.38%2c 816 273.68Q844.29 229.98%2c 888 258.27Q939.58 189.85%2c 1008 241.43Q1081.89 195.33%2c 1128 269.22Q1158.22 227.44%2c 1200 257.66Q1250.11 187.77%2c 1320 237.88Q1398.2 196.08%2c 1440 274.28Q1465.08 227.36%2c 1512 252.43z' fill='rgba(255%2c 255%2c 255%2c 1)'%3e%3c/path%3e%3cpath d='M1488 300L0 300 L0 304.01Q30.44 262.45%2c 72 292.89Q99.47 248.36%2c 144 275.82Q222.46 234.28%2c 264 312.75Q290.77 267.52%2c 336 294.29Q383.35 221.64%2c 456 268.99Q535.81 228.8%2c 576 308.61Q628.52 241.13%2c 696 293.66Q742.49 220.15%2c 816 266.64Q883.57 214.21%2c 936 281.78Q982.58 256.36%2c 1008 302.93Q1025.94 248.88%2c 1080 266.82Q1122.7 237.52%2c 1152 280.22Q1195.27 251.5%2c 1224 294.77Q1270.52 221.28%2c 1344 267.8Q1400.79 252.59%2c 1416 309.37Q1436.94 258.31%2c 1488 279.25z' fill='rgba(255%2c 255%2c 255%2c 1)'%3e%3c/path%3e%3c/g%3e%3cdefs%3e%3cmask id='SvgjsMask1008'%3e%3crect width='1440' height='300' fill='white'%3e%3c/rect%3e%3c/mask%3e%3c/defs%3e%3c/svg%3e");
+}
+
+.cardhover:hover{
+    background-color: #f3e5bd3a !important;
+    cursor:pointer;
+}
+
+.actu:hover{
+    cursor:pointer;
+}
+
+.contact{
+    font-size: 1.8em;
+}
+
+
+
+
+/* ILLUSTRATIONS*/
+svg#freepik_stories-small-town:not(.animated) .animable {opacity: 0;}svg#freepik_stories-small-town.animated #freepik--tree-3--inject-8 {animation: 1.5s Infinite  linear wind;animation-delay: 0s;}svg#freepik_stories-small-town.animated #freepik--tree-2--inject-8 {animation: 3s Infinite  linear wind;animation-delay: 0s;}svg#freepik_stories-small-town.animated #freepik--Windmile--inject-8 {animation: 6s Infinite  linear wind;animation-delay: 0s;}            @keyframes wind {                0% {                    transform: rotate( 0deg );                }                25% {                    transform: rotate( 1deg );                }                75% {                    transform: rotate( -1deg );                }            }        .animator-hidden { display: none; }

@@ -1,0 +1,579 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!----------------------------------- BOOTSTRAP IMPORT LOCAL-->
+    <link href="bootstrap-5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <script src="bootstrap-5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+    <!----------------------------------- BOOTSTRAP IMPORT LOCAL-->
+
+    <link href="boxicons-2.1.4/css/boxicons.min.css" rel="stylesheet" />
+    <link href="style.css" rel="stylesheet" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css"
+    />
+
+    <title>Bienvenue à Saint-Julia</title>
+  </head>
+  <body>
+    <!----------------------------------- MODAL 
+    <div
+      class="modal fade"
+      id="myModal"
+      tabindex="-1"
+      aria-labelledby="exampleModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">
+              Merci de visiter mon portfolio !
+            </h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            Ce site est une étude de cas, seule cette page est développée
+            actuellement, les liens ne sont donc pas actifs.
+            <br />Bonne visite.
+          </div>
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-success"
+              data-bs-dismiss="modal"
+            >
+              OK
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script>
+      var myModal = new bootstrap.Modal(document.getElementById("myModal"), {});
+      myModal.show();
+    </script>
+    -->
+
+    <!----------------------------------- NAV -->
+    <div class="container-fluid bg-success">
+      <div class="container px-5">
+        <div class="row">
+          <nav class="col navbar navbar-expand-lg navbar-light">
+            <a class="navbar-brand logo text-white" href="#"
+              ><span style="font-weight: 300; color: white"
+                ><i class="bx bx-wind bx-flip-horizontal"></i>COMMUNE DE</span
+              >
+              SAINT-JULIA</a
+            >
+            <button
+              class="navbar-toggler"
+              type="button"
+              data-toggle="collapse"
+              data-target="#navbarNav"
+              aria-controls="navbarNav"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+            >
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div
+              class="collapse navbar-collapse justify-content-end"
+              id="navbarCollapse"
+            >
+              <ul class="navbar-nav align-items-center">
+                <i
+                  class="bi bi-chat-left-text text-success bg-white rounded-circle px-2 py-1"
+                ></i>
+                <li class="nav-item">
+                  <a class="nav-link text-white" href="error.html"
+                    >Contactez-nous</a
+                  >
+                </li>
+                <i
+                  class="bi bi-globe bg-white text-success rounded-circle px-2 py-1 ms-3 me-1"
+                ></i>
+                <div class="dropdown langue">
+                  <a
+                    class="btn px-0 dropdown-toggle text-white"
+                    href="#"
+                    role="button"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                  >
+                    Langue
+                  </a>
+
+                  <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="#">Français</a></li>
+                    <li>
+                      <a class="dropdown-item" href="#">Anglais</a>
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="#">Espagnol</a>
+                    </li>
+                  </ul>
+                </div>
+                <i
+                  class="bi bi-universal-access text-success bg-white rounded-circle px-2 py-1 ms-3"
+                ></i>
+                <li class="nav-item">
+                  <a class="nav-link text-white" href="error.html"
+                    >Accessibilité</a
+                  >
+                </li>
+              </ul>
+            </div>
+          </nav>
+        </div>
+      </div>
+    </div>
+    <div class="container-fluid bg-light shadow">
+      <div class="container px-5">
+        <div class="row py-2 d-none d-lg-flex">
+          <div class="col-2">
+            <a>Découvrir</a>
+          </div>
+          <div class="col-2">
+            <a>Bouger</a>
+          </div>
+          <div class="col-2">
+            <a>Déguster</a>
+          </div>
+          <div class="col-2">
+            <a>Dormir</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!--HEADER-->
+
+    <div class="container-fluid bg-cloud">
+      <div class="container px-5">
+        <div class="row py-5 gx-5">
+          <div class="col-md-6 z-1">
+            <h1>
+              Bienvenue à<br />
+              Saint-Julia
+            </h1>
+            <div class="input-group mb-4 mt-4">
+              <input
+                type="text"
+                class="form-control border-success"
+                placeholder="Que recherchez-vous ?"
+                aria-label="Que recherchez-vous ?"
+                aria-describedby="button-addon2"
+              />
+              <button class="btn btn-success" type="button" id="button-addon2">
+                Rechercher
+              </button>
+            </div>
+          </div>
+          <div class="col-md-6 d-none d-md-block text-center">
+            <img
+              src="img/small-town-not-css.svg"
+              alt=""
+              style="max-height: 200px"
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!--ACCES RAPIDES-->
+
+    <div class="container px-5">
+      <div class="container shadow p-4 z-2 bg-white rounded m-auto">
+        <h3>Accès rapides</h3>
+        <button type="button" class="btn btn-outline-dark mt-2 me-1">
+          Comment trier mes déchets ?
+        </button>
+        <button type="button" class="btn btn-outline-dark mt-2 me-1">
+          Café "La Récréation"
+        </button>
+        <button type="button" class="btn btn-outline-dark mt-2 me-1">
+          Économies d'énergie
+        </button>
+        <button type="button" class="btn btn-outline-dark mt-2 me-1">
+          Contrat d'eau
+        </button>
+        <button type="button" class="btn btn-outline-dark mt-2 me-1">
+          Services
+        </button>
+        <button type="button" class="btn btn-outline-dark mt-2 me-1">
+          Fibre optique
+        </button>
+        <button type="button" class="btn btn-outline-dark mt-2 me-1">
+          Terrain de sport
+        </button>
+      </div>
+    </div>
+
+    <!--ACTUELLEMENT-->
+
+    <div class="container px-5 mt-5">
+      <h3 class="h3underline mb-4">Actuellement</h3>
+      <div class="row ms-0 gy-3">
+        <div class="col-lg-8 col-md-12 border-0 shadow bg-white rounded actu">
+          <div class="row p-4" style="height: 300px">
+            <div class="col rounded p-0 overflow-hidden" style="height: 100%">
+              <img
+                src="img/saint-julia.jpg"
+                alt=""
+                style="height: 100%; object-fit: cover"
+              />
+            </div>
+            <div class="col">
+              <p class="text-secondary mb-0" style="font-size: 0.8em">
+                Publié le 02 janvier 2023
+              </p>
+              <a class="text-success" style="font-size: 0.8em"> #Culture </a>
+              <h5 class="mt-2">Concours de photo : tous à vos appareils</h5>
+              <p class="text-secondary">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Eligendi, quae.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-12 d-flex actu">
+          <div
+            class="p-4 border-0 shadow bg-white rounded align-self-stretch flex-grow-1"
+          >
+            <p class="text-secondary mb-0" style="font-size: 0.8em">
+              Publié le 20 novembre 2022
+            </p>
+            <a class="text-success" style="font-size: 0.8em"> #Sport </a>
+            <h5 class="mt-2">
+              Le nouveau terrain de sport : disponible au printemps
+            </h5>
+            <p class="text-secondary">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi,
+              quae.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!--EN DEUX MOTS-->
+
+    <div class="container px-5 mt-5">
+      <h3 class="h3underline mb-4">En deux mots</h3>
+      <div class="row g-3">
+        <div class="col-md-6">
+          <div class="pt-3 border-0 bg-white rounded">
+            <h5>Le nouveau composteur est installé</h5>
+            <p class="text-secondary">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet
+              eveniet vero praesentium, ex animi tempore neque sed quod dolore
+              in soluta iste aut beatae excepturi necessitatibus dolorem
+              accusamus possimus nostrum inventore ipsum aliquam nihil dolorum
+              voluptatum dicta. Quia, neque at.
+              <a class="text-secondary">En savoir plus</a>
+            </p>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="pt-3 border-0 bg-white rounded">
+            <h5>Retour sur la 26e Foire aux Chapons</h5>
+            <p class="text-secondary">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet
+              eveniet vero praesentium, ex animi tempore neque sed quod dolore
+              in soluta iste aut beatae excepturi necessitatibus dolorem
+              accusamus possimus nostrum inventore ipsum aliquam nihil dolorum
+              voluptatum dicta. Quia, neque at.
+              <a class="text-secondary">En savoir plus</a>
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="row text-center">
+        <div class="col">
+          <button type="button" class="btn btn-outline-success mt-3">
+            Voir toutes les actualités
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!--BANNER PINK-->
+
+    <div class="container-fluid bg-pink purple pb-4 mt-5">
+      <div class="container px-5 pt-5 mt-5">
+        <div class="row g-3">
+          <div class="col-md-6 text-center">
+            <div class="pt-3 border-0">
+              <h3 class="mb-4">
+                <i class="bx bx-leaf" style="color: #a36797"></i> Saint-Julia en
+                transition
+              </h3>
+              <p class="px-5">
+                Découvrez toutes les actions de la communne pour relever le défi
+                du changement climatique et préserver la qualité de l'air
+              </p>
+              <button type="button" class="btn btn-outline-success">
+                Découvrir
+              </button>
+            </div>
+            <img
+              class="mt-5 mb-5"
+              src="img/undraw_photograph_re_up3b.svg"
+              alt=""
+              style="width: 100%; max-height: 200px"
+            />
+          </div>
+          <div class="col-md-6 text-center">
+            <div class="pt-3 border-0">
+              <h3 class="mb-4">
+                <i class="bx bx-leaf" style="color: #a36797"></i> J'agis avec
+                mon village
+              </h3>
+              <p class="px-5">
+                Nous pouvons tous adopter de nouveaux gestes pour préserver
+                notre cadre de vie et notre planète
+              </p>
+              <button type="button" class="btn btn-outline-success">
+                Passer à l'action
+              </button>
+            </div>
+            <img
+              class="mt-5 mb-5"
+              src="img/undraw_dream_world_re_x2yl.svg"
+              alt=""
+              style="width: 100%; max-height: 200px"
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!--DECOUVRIR LE VILLAGE-->
+
+    <div class="container p-5 mt-5">
+      <h3 class="h3underline mb-5 text-center">Découvrir le village</h3>
+      <div class="row g-3">
+        <div class="col-lg-3 col-md-6">
+          <div
+            class="pt-4 pb-2 border-0 shadow bg-white rounded text-center cardhover"
+          >
+            <img
+              src="img/undraw_small_town_re_7mcn.svg"
+              alt=""
+              style="width: 100%; max-height: 100px"
+            />
+            <h5 class="mt-3">Patrimoine</h5>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-6">
+          <div
+            class="pt-4 pb-2 border-0 shadow bg-white rounded text-center cardhover"
+          >
+            <img
+              src="img/undraw_country_side_re_0dou.svg"
+              alt=""
+              style="max-height: 100px"
+            />
+            <h5 class="mt-3">Nature</h5>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-6">
+          <div
+            class="pt-4 pb-2 border-0 shadow bg-white rounded text-center cardhover"
+          >
+            <img
+              src="img/undraw_coffee_break_h3uu.svg"
+              alt=""
+              style="max-height: 100px"
+            />
+            <h5 class="mt-3">Services</h5>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-6">
+          <div
+            class="pt-4 pb-2 border-0 shadow bg-white rounded text-center cardhover"
+          >
+            <img
+              src="img/undraw_dreamer_re_9tua.svg"
+              alt=""
+              style="max-height: 100px"
+            />
+            <h5 class="mt-3">Culture</h5>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!--CONTACTER-->
+
+    <div class="container-fluid bg-success mt-5 pt-3 pb-5">
+      <div class="container px-5 mt-5">
+        <h3 class="h3underline mb-5 text-center">Une demande spécifique ?</h3>
+        <div class="d-grid gap-2 col-6 mx-auto">
+          <button class="btn btn-lg btn-warning" type="button">
+            Consulter la Foire Aux Questions
+          </button>
+        </div>
+        <div class="dropdown d-grid gap-2 col-6 mx-auto mt-3">
+          <button
+            class="btn btn-lg btn-light dropdown-toggle"
+            type="button"
+            data-bs-toggle="dropdown"
+            aria-expanded="false"
+          >
+            Demander un renseignement
+          </button>
+          <ul class="dropdown-menu">
+            <li>
+              <a class="dropdown-item" href="#"
+                >Sur la collecte et le tri des déchets</a
+              >
+            </li>
+            <li>
+              <a class="dropdown-item" href="#"
+                >Sur l'eau potable ou les eaux usées</a
+              >
+            </li>
+            <li>
+              <a class="dropdown-item" href="#">Pour toute autre demande</a>
+            </li>
+          </ul>
+        </div>
+        <div class="dropdown-center d-grid gap-2 col-6 mx-auto mt-3 mb-4">
+          <button
+            class="btn btn-lg btn-light dropdown-toggle"
+            type="button"
+            data-bs-toggle="dropdown"
+            aria-expanded="false"
+          >
+            Signaler un problème
+          </button>
+          <ul class="dropdown-menu">
+            <li>
+              <a class="dropdown-item" href="#"
+                >Concernant la collecte des déchets</a
+              >
+            </li>
+            <li>
+              <a class="dropdown-item" href="#">Concernant la voirie</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <!--NEWSLETTER-->
+
+    <div class="container-fluid bg-light pt-3 pb-5">
+      <div class="container px-5 mt-5">
+        <h3 class="h3underline mb-4 text-center">Notre lettre d'information</h3>
+
+        <div class="pt-3 px-5 border-0 text-center">
+          <p class="px-5">
+            Courte, utile et rapide à lire...<br />Inscrivez-vous à notre
+            newsletter pour suivre l'actualité du village et des services
+            pratiques qui vous concernent.
+          </p>
+          <button type="button" class="btn btn-outline-success">
+            S'inscrire
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!--FOOTER-->
+
+    <footer>
+      <div class="container-fluid bg-dark">
+        <div class="container px-5">
+          <div class="row">
+            <div class="col-lg-3 col-md-6 text-white py-5">
+              <h5>
+                <a class="navbar-brand logo text-white" href="#"
+                  ><span style="font-weight: 300; color: white"
+                    ><i class="bx bx-wind bx-flip-horizontal"></i>COMMUNE
+                    DE</span
+                  >
+                  SAINT-JULIA</a
+                >
+              </h5>
+              <div class="mt-3 mb-3 p-0">
+                <img
+                  src="img/Haute-Garonne_(31)_logo_2015.svg"
+                  style="max-width: 50px"
+                  alt=""
+                  class="me-3"
+                />
+                <img
+                  src="img/Logo_Occitanie_2017.svg"
+                  style="max-width: 50px"
+                  alt=""
+                />
+              </div>
+              <div class="d-flex align-items-start">
+                <i class="bx bx-current-location contact me-2"></i>
+                <p>Pl. du 11 Novembre 1918, 31540 Saint-Julia</p>
+              </div>
+              <div class="d-flex align-items-start">
+                <i class="bx bxs-phone contact me-2"></i>
+                <p>05 67 89 01 23</p>
+              </div>
+              <div class="d-flex align-items-start">
+                <i class="bx bxs-time contact me-2"></i>
+                <p>Lun-Ven : 8h30-12h30 / 13h30-17h</p>
+              </div>
+            </div>
+            <div class="col-lg-3 col-md-6 text-white text-center py-5">
+              <h5 class="mb-4">Informations générales</h5>
+              <div class="mt-3">
+                <!--LINKS DISABLED-->
+                <a class="text-white">Le saviez-vous ?</a>
+              </div>
+              <div class="mt-3">
+                <a class="text-white">Foire aux questions</a>
+              </div>
+              <div class="mt-3">
+                <a class="text-white">Offres d'emploi</a>
+              </div>
+            </div>
+            <div class="col-lg-3 col-md-6 text-white text-center py-5">
+              <h5 class="mb-4">Communications</h5>
+              <div class="mt-3">
+                <a class="text-white">Lettre d'information</a>
+              </div>
+              <div class="mt-3">
+                <a class="text-white">Espace Presse</a>
+              </div>
+              <div class="mt-3">
+                <a class="text-white">Gallerie Photo</a>
+              </div>
+            </div>
+            <div class="col-lg-3 col-md-6 text-white text-center py-5">
+              <h5 class="mb-4">Contact</h5>
+              <button type="button" class="btn btn-outline-light">
+                Contactez-nous
+              </button>
+              <!--LINKS DISABLED-->
+              <div class="contact mt-3">
+                <a><i class="bx bxl-facebook-circle text-white"></i></a>
+                <a><i class="bx bxl-instagram text-white"></i></a>
+                <a><i class="bx bxl-twitter text-white"></i></a>
+                <a><i class="bx bxl-linkedin text-white"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
